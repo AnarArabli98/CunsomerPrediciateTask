@@ -20,6 +20,22 @@ import org.w3c.dom.css.CSSPrimitiveValue;
 public class Main {
 
     public static void main(String[] args) {
+        
+        
+        UserService userService = new UserService();
+        userService.create.accept(new User("1","Anar",Gender.MALE));
+        userService.create.accept(new User("2","Balay",Gender.MALE));
+        System.out.println(userService.getById.apply(1));
+        System.out.println(userService.getAllUser.get());
+        
+        
+        
+        
+        
+        
+        
+        
+        
         List<Integer> number  = new ArrayList<>();
         number.add(2);
         number.add(3);
